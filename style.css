@@ -38,14 +38,12 @@ header {
 }
 
 nav {
-    margin-top: 15px;
     display: flex;
     justify-content: center;
-    align-items: center;
     gap: 15px;
-    flex-wrap: nowrap;
-    white-space: nowrap;
-}
+    flex-wrap: wrap;
+    margin-top: 15px
+    }
 
 nav a {
     color: #ffecb3;
@@ -138,3 +136,4 @@ footer {
     margin-top: 40px;
 
 }
+
