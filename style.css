@@ -9,13 +9,12 @@
 html, body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    display: grid; /* Requirement: Grid layout [cite: 37] */
-    grid-template-areas: 
-        "header"
-        "content"
-        "footer";
     margin: 0;
     padding: 0;
+}
+
+body {
+    display: block;
 }
 
 img, iframe {
@@ -131,3 +130,4 @@ footer {
     margin-top: 40px;
 
 }
+
