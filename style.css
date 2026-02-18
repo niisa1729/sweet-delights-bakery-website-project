@@ -9,6 +9,7 @@
 html {
     margin: 0;
     padding: 0;
+}
     
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -136,5 +137,6 @@ footer {
     margin-top: 40px;
 
 }
+
 
 
