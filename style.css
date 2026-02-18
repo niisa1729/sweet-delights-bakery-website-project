@@ -55,18 +55,19 @@ nav a:hover {
 @media (max-width: 480px) {
     nav {
     display: flex;
-    justify-content: flex-start; /* aligns left */
+    justify-content: flex-start;
     gap: 15px;
-    overflow-x: auto;           /* scrollable if too wide */
-    -webkit-overflow-scrolling: touch; /* smooth scroll on iOS */
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
     padding-bottom: 5px;
+    flex-wrap: nowrap;
     }
     
     nav a {
         flex-shrink: 0;
     }
 }
-/* Banner Section [cite: 18] */
+
 .hero {
     background: #f8bbd0; /* Warna Pink Pastel */
     padding: 80px 20px;
@@ -143,5 +144,6 @@ footer {
     margin-top: 40px;
 
 }
+
 
 
