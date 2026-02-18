@@ -73,10 +73,6 @@ nav a:hover {
     padding: 40px 20px;
 }
 
-.item img {
-    length: 80px
-    width: 50px
-}
 /* Featured Categories Grid */
 .categories {
     display: grid;
@@ -115,3 +111,4 @@ footer {
     margin-top: 40px;
 
 }
+
