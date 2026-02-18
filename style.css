@@ -73,6 +73,13 @@ nav a:hover {
     padding: 10px 10px;
 }
 
+.about-section {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+}
+
 /* Featured Categories Grid */
 .categories {
     display: grid;
@@ -111,5 +118,6 @@ footer {
     margin-top: 40px;
 
 }
+
 
 
