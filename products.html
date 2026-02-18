@@ -5,19 +5,49 @@
     <link rel="stylesheet" href="style.css">
     <title>Products | Sweet Delights</title>
     <style>
+        /* Grid container */
         .product-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
         }
+
+        .item {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+            border-radius: 8px;
+            box-sizing: border-box;
+        }
+
         .img-wrapper {
             width: 100%;
-            aspect-ratio: 1/1;
+            aspect-ratio: 1 / 1;
             overflow: hidden;
             border-radius: 5px;
+            margin-bottom: 10px;
         }
-        .img-wrapper img { width: 100%; height: 100%; object-fit: cover; display: block; }
-        .price { color: #d84315; font-weight: bold; }
+
+        .img-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .price { 
+            color: #d84315; 
+            font-weight: bold; 
+        }
+
+        @media (max-width: 600px) {
+            .product-grid {
+                grid-template-columns: 1fr;
+            }
+        }
     </style>
 </head>
 <body>
@@ -36,22 +66,23 @@
             <div class="item">
                 <div class="img-wrapper">
                     <img src="bread.jpg" alt="Roti">
-                    <h3>Roti Artisan</h3>
-                    <p class="price">RM 10.00</p>
                 </div>
-            <div class="item">
-                <div class="img-wrapper">
-                    <img src="cake.jpg" alt="Kek">
-                    <h3>Kek Coklat</h3>
-                    <p class="price">RM 50.00</p>
-                </div>
+                <h3>Roti Artisan</h3>
+                <p class="price">RM 10.00</p>
             </div>
             <div class="item">
                 <div class="img-wrapper">
-                    <img src="creampuff.jpg" alt="Cookies">
-                    <h3>Krim Puff</h3>
-                    <p class="price">RM 7.00</p>
+                    <img src="cake.jpg" alt="Kek">
                 </div>
+                <h3>Kek Coklat</h3>
+                <p class="price">RM 50.00</p>
+            </div>
+            <div class="item">
+                <div class="img-wrapper">
+                    <img src="creampuff.jpg" alt="Krim Puff">
+                </div>
+                <h3>Krim Puff</h3>
+                <p class="price">RM 7.00</p>
             </div>
         </div>
     </main>
@@ -60,58 +91,4 @@
         <p>&copy; 2025 Sweet Delights. Project IAS1113.</p>
     </footer>
 </body>
-
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
