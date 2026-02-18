@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Products | Sweet Delights</title>
+    <style>
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+        .item {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+            border-radius: 8px;
+        }
+        .item img { width: 100%; height: auto; border-radius: 5px; }
+        .price { color: #d84315; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Featured Products</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="products.html">Products</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main class="content">
+        <div class="product-grid">
+            <div class="item">
+                <img src="https://via.placeholder.com/200" alt="Roti">
+                <h3>Roti Artisan</h3>
+                <p class="price">RM 10.00</p>
+            </div>
+            <div class="item">
+                <img src="https://via.placeholder.com/200" alt="Kek">
+                <h3>Kek Coklat</h3>
+                <p class="price">RM 50.00</p>
+            </div>
+            <div class="item">
+                <img src="https://via.placeholder.com/200" alt="Cookies">
+                <h3>Biskut Cip Coklat</h3>
+                <p class="price">RM 15.00</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Sweet Delights. Project IAS1113.</p>
+    </footer>
+</body>
+</html>

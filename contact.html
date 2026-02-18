@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact Us | Sweet Delights</title>
+</head>
+<body>
+    <header>
+        <h1>Hubungi Kami</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="products.html">Products</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main class="content">
+        <form id="contactForm" style="max-width: 500px; margin: auto;">
+            <table style="width: 100%; border-spacing: 10px;">
+                <tr>
+                    <td>Nama:</td>
+                    <td><input type="text" id="name" required style="width: 100%; border: 2px solid #5d4037; padding: 5px;"></td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td><input type="email" id="email" required style="width: 100%; border: 2px solid #5d4037; padding: 5px;"></td>
+                </tr>
+                <tr>
+                    <td>Mesej:</td>
+                    <td><textarea id="msg" required style="width: 100%; border: 2px solid #5d4037; height: 100px;"></textarea></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="Hantar" style="background-color: #5d4037; color: white; padding: 10px 20px; border: none; cursor: pointer;"></td>
+                </tr>
+            </table>
+        </form>
+
+        <div style="text-align: center; margin-top: 30px;">
+            <h3>Lokasi Kami</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=..." width="100%" height="250" style="border:0;" allowfullscreen=""></iframe>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Sweet Delights. Project IAS1113.</p>
+    </footer>
+
+    <script>
+        document.getElementById('contactForm').onsubmit = function(e) {
+            e.preventDefault();
+            alert("Terima kasih " + document.getElementById('name').value + "! Mesej anda telah dihantar.");
+            this.reset();
+        };
+    </script>
+</body>
+</html>
