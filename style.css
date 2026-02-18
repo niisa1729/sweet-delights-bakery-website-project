@@ -3,7 +3,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    outline: 1px solid red;
 }
  
 html, body {
@@ -53,6 +52,20 @@ nav a:hover {
     text-decoration: underline;
 }
 
+@media (max-width: 480px) {
+    nav {
+    display: flex;
+    justify-content: flex-start; /* aligns left */
+    gap: 15px;
+    overflow-x: auto;           /* scrollable if too wide */
+    -webkit-overflow-scrolling: touch; /* smooth scroll on iOS */
+    padding-bottom: 5px;
+    }
+    
+    nav a {
+        flex-shrink: 0;
+    }
+}
 /* Banner Section [cite: 18] */
 .hero {
     background: #f8bbd0; /* Warna Pink Pastel */
@@ -130,4 +143,5 @@ footer {
     margin-top: 40px;
 
 }
+
 
