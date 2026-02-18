@@ -28,8 +28,10 @@ nav {
     margin-top: 15px;
     display: flex;
     justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: nowrap;
+    white-space: nowrap;
 }
 
 nav a {
@@ -123,6 +125,7 @@ footer {
     margin-top: 40px;
 
 }
+
 
 
 
