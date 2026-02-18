@@ -26,6 +26,10 @@ header {
 
 nav {
     margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 nav a {
@@ -34,6 +38,7 @@ nav a {
     margin: 0 15px;
     font-weight: bold;
     font-size: 1.1em;
+    padding: 8px 12px;
 }
 
 nav a:hover {
@@ -118,6 +123,7 @@ footer {
     margin-top: 40px;
 
 }
+
 
 
 
